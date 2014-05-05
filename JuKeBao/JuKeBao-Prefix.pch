@@ -10,7 +10,30 @@
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
 
+
+#ifndef SCREEN_WIDTH
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#endif
+
+#ifndef SCREEN_HEIGHT
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#endif
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#define DefaultWebServiceBaseUrl  @"http://192.168.2.7:2729/"
+#define DefaultWebServiceNamespace @"http://mycount.cn/haiyinwebservice/"
+
+#import "BasicViewController.h"
+#import "ViewController.h"
+
+
+#import "SQLDataSearch.h"
+
+#import "MarketCustomersViewController.h"
+#import "AdvertisementViewController.h"
+#import "SetingViewController.h"
+
 #endif
